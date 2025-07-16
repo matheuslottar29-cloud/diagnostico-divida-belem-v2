@@ -95,6 +95,30 @@ export default function ExecutiveDashboard() {
             </div>
           </CardContent>
         </Card>
+
+        {/* Call to Action */}
+        <div className="text-center mt-8">
+          <div className="bg-blue-600 text-white rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-2">Próximo Passo: Aprovação Política</h3>
+            <p className="mb-4">
+              A janela de oportunidade é limitada. O início imediato das tratativas é essencial
+              para implementar a solução antes que a pressão fiscal se torne insustentável.
+            </p>
+            <Button
+              className="bg-white text-blue-600 hover:bg-gray-100"
+              onClick={() => {
+                // Criar link para download do documento
+                const link = document.createElement('a');
+                link.href = '/REPERFILAMENTO DA DÍVIDA GARANTIDA.pdf';
+                link.download = 'REPERFILAMENTO_DA_DÍVIDA_GARANTIDA.pdf';
+                link.click();
+              }}
+            >
+              <FileText className="h-4 w-4 mr-2" />
+              Baixar Diagnóstico Completo
+            </Button>
+          </div>
+        </div>
       </div>
     </section>
   )
