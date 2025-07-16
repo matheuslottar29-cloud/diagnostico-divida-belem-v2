@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { DollarSign, AlertTriangle, TrendingUp, Clock, Target, Banknote } from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { AlertTriangle, Banknote, Clock, DollarSign, Target, TrendingUp } from 'lucide-react';
 
 export default function ExecutiveDashboard() {
   return (
@@ -87,7 +87,7 @@ export default function ExecutiveDashboard() {
               <div>
                 <h3 className="text-lg font-semibold text-red-800 mb-2">Situação Crítica: "Concentração Temporal"</h3>
                 <p className="text-red-700">
-                  <strong>79,9% da dívida</strong> (R$ 763 milhões) vence nos próximos 5 anos, criando pressão fiscal insustentável. 
+                  <strong>79,9% da dívida</strong> (R$ 763 milhões) vence nos próximos 5 anos, criando pressão fiscal insustentável.
                   <strong> Três contratos</strong> iniciam amortização simultaneamente entre 2024-2025, comprometendo a capacidade de investimento municipal.
                   <strong> Desembolsos futuros</strong> (R$ 289M) adicionarão pressão extra com cronogramas separados.
                 </p>
@@ -95,6 +95,29 @@ export default function ExecutiveDashboard() {
             </div>
           </CardContent>
         </Card>
+        {/* Call to Action */}
+        <div className="text-center mt-8">
+          <div className="bg-blue-600 text-white rounded-lg p-6">
+            <h3 className="text-xl font-bold mb-2">Próximo Passo: Aprovação Política</h3>
+            <p className="mb-4">
+              A janela de oportunidade é limitada. O início imediato das tratativas é essencial
+              para implementar a solução antes que a pressão fiscal se torne insustentável.
+            </p>
+            <Button
+              className="bg-white text-blue-600 hover:bg-gray-100"
+              onClick={() => {
+                // Criar link para download do documento
+                const link = document.createElement('a');
+                link.href = '/diagnostico_divida_belem.pdf';
+                link.download = 'Diagnostico_Tecnico_Financeiro_Belem_PA.pdf';
+                link.click();
+              }}
+            >
+              <FileText className="h-4 w-4 mr-2" />
+              Baixar Diagnóstico Completo
+            </Button>
+          </div>
+        </div>
       </div>
     </section>
   )
