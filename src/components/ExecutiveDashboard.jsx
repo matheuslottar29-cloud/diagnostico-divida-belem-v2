@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { DollarSign, AlertTriangle, TrendingUp, Clock, Target, Banknote } from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { AlertTriangle, Banknote, Clock, DollarSign, Target, TrendingUp } from 'lucide-react';
 
 export default function ExecutiveDashboard() {
   return (
@@ -87,7 +87,7 @@ export default function ExecutiveDashboard() {
               <div>
                 <h3 className="text-lg font-semibold text-red-800 mb-2">Situação Crítica: "Concentração Temporal"</h3>
                 <p className="text-red-700">
-                  <strong>79,9% da dívida</strong> (R$ 763 milhões) vence nos próximos 5 anos, criando pressão fiscal insustentável. 
+                  <strong>79,9% da dívida</strong> (R$ 763 milhões) vence nos próximos 5 anos, criando pressão fiscal insustentável.
                   <strong> Três contratos</strong> iniciam amortização simultaneamente entre 2024-2025, comprometendo a capacidade de investimento municipal.
                   <strong> Desembolsos futuros</strong> (R$ 289M) adicionarão pressão extra com cronogramas separados.
                 </p>
