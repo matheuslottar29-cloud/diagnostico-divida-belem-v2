@@ -1,4 +1,4 @@
-import { Building2, Calendar, FileText, Database } from 'lucide-react'
+import { Building2, Calendar, Database, FileText } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -8,13 +8,13 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Building2 className="h-6 w-6" />
-              <span className="text-lg font-semibold">SEGEP - Belém/PA</span>
+              <span className="text-lg font-semibold">ENCIBRA S.A.</span>
             </div>
             <p className="text-gray-400 text-sm">
               Diagnóstico técnico-financeiro elaborado para subsidiar análise da dívida garantida municipal.
             </p>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4 flex items-center space-x-2">
               <Database className="h-5 w-5" />
@@ -27,7 +27,7 @@ export default function Footer() {
               <li>• Contratos integrais analisados</li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4 flex items-center space-x-2">
               <FileText className="h-5 w-5" />
@@ -41,7 +41,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-4 text-sm text-gray-400">
             <div className="flex items-center space-x-2">
@@ -49,12 +49,12 @@ export default function Footer() {
               <span>Julho 2025</span>
             </div>
             <span>•</span>
-            <span>Elaborado por Manus AI</span>
+            <span>Elaborado por Encibra S.A.</span>
           </div>
-          
+
           <div className="mt-4 md:mt-0">
             <p className="text-sm text-gray-400">
-              Documento técnico para análise da SEGEP
+              Documento técnico para auxíliar análise da PMB
             </p>
           </div>
         </div>

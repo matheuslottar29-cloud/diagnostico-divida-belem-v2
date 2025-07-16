@@ -19,12 +19,12 @@ export default function Header() {
             </div>
             <div className="flex items-center space-x-2">
               <FileText className="h-4 w-4" />
-              <span>SEGEP</span>
+              <span>ENCIBRA S.A.</span>
             </div>
           </div>
         </div>
         <div className="mt-4 text-sm text-blue-200">
-          <p>Fontes: Painel de Garantias STN | Relatório Quadrimestral 1º/2025 | Dados corrigidos com SELIC atual</p>
+          <p>Fontes: Painel de Garantias STN | Relatório Quadrimestral de Operações de Crédito Garantidas (RQG)  1º/2025 </p>
         </div>
       </div>
     </header>
