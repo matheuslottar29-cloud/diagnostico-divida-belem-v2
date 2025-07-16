@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AlertTriangle, Banknote, Clock, DollarSign, Target, TrendingUp } from 'lucide-react';
 
@@ -95,6 +96,7 @@ export default function ExecutiveDashboard() {
             </div>
           </CardContent>
         </Card>
+
         {/* Call to Action */}
         <div className="text-center mt-8">
           <div className="bg-blue-600 text-white rounded-lg p-6">
@@ -108,8 +110,8 @@ export default function ExecutiveDashboard() {
               onClick={() => {
                 // Criar link para download do documento
                 const link = document.createElement('a');
-                link.href = '/diagnostico_divida_belem.pdf';
-                link.download = 'Diagnostico_Tecnico_Financeiro_Belem_PA.pdf';
+                link.href = '/REPERFILAMENTO DA DÍVIDA GARANTIDA.pdf';
+                link.download = 'REPERFILAMENTO_DA_DÍVIDA_GARANTIDA.pdf';
                 link.click();
               }}
             >
